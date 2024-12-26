@@ -1,0 +1,38 @@
+// android/build.gradle
+
+buildscript {
+    ext {
+        kotlin_version = '1.7.20'  // Ensure this version is compatible with your project
+    }
+
+    repositories {
+        google()       // Ensure this is present to resolve Kotlin plugin and other Android dependencies
+        mavenCentral() // Ensures you can resolve other dependencies
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.4" // Ensure the Android Gradle plugin is compatible
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // Kotlin plugin version
+    }
+}
+
+allprojects {
+    repositories {
+        google()       // Ensures all projects can access the necessary Android repositories
+        mavenCentral() // For all other dependencies
+    }
+}
+
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "14556310002",
+    "project_id": "fitnestx-d475c",
+    "storage_bucket": "fitnestx-d475c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14556310002:android:da45c0effef1b790cf236b",
+        "android_client_info": {
+          "package_name": "com.exam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14556310002-5qcsvecet3jv061603i126gkrltl53us.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6DdsSQ-HkVNmj-aTTuKMazfJwxg-xPps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14556310002-5qcsvecet3jv061603i126gkrltl53us.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14556310002:android:ed0c8e26f3b1f70dcf236b",
+        "android_client_info": {
+          "package_name": "com.example.fitnestx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14556310002-5qcsvecet3jv061603i126gkrltl53us.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6DdsSQ-HkVNmj-aTTuKMazfJwxg-xPps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14556310002-5qcsvecet3jv061603i126gkrltl53us.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

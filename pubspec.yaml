@@ -1,0 +1,47 @@
+name: fitnestx
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.8.1
+  firebase_auth: ^5.3.4
+  cloud_firestore: ^5.5.1
+  video_player: ^2.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - lib/assets/images/google.png
+    - lib/assets/images/facebook.png
+    - lib/assets/images/home.png
+    - lib/assets/images/overweight.png
+    - lib/assets/images/underweight.png
+    - lib/assets/images/normal.png
+    - lib/assets/videos/burpee.mp4
+    - lib/assets/videos/Jogging.mp4
+    - lib/assets/videos/jumping.mp4
+    - lib/assets/videos/mountain.mp4
+    - lib/assets/videos/planks.mp4
+    - lib/assets/videos/pullup.mp4
+    - lib/assets/videos/pushup.mp4
+    - lib/assets/videos/Squats.mp4
+    - lib/assets/videos/yoga.mp4

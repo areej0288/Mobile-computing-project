@@ -1,0 +1,35 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Function to calculate variance for different sample sizes
+def simulate_variance(sample_sizes, num_simulations=1000):
+    population = np.random.normal(0, 1, 10000)  # Generate a large population
+    variance_estimates = {}
+
+    for size in sample_sizes:
+        estimates = []
+        for _ in range(num_simulations):
+            sample = np.random.choice(population, size, replace=False)
+            estimates.append(np.var(sample, ddof=1))  # Unbiased variance
+        variance_estimates[size] = estimates
+
+    return variance_estimates
+
+# Define sample sizes to test
+sample_sizes = [5, 10, 30, 50, 100, 500]
+
+# Simulate variance estimates
+variance_results = simulate_variance(sample_sizes)
+
+# Plot the results
+plt.figure(figsize=(12, 8))
+
+for size in sample_sizes:
+    plt.hist(variance_results[size], bins=30, alpha=0.5, label=f'Sample Size: {size}')
+
+plt.title('Effect of Sample Size on Variance Estimates', fontsize=16)
+plt.xlabel('Variance Estimate', fontsize=14)
+plt.ylabel('Frequency', fontsize=14)
+plt.legend(fontsize=12)
+plt.grid(alpha=0.3)
+plt.show()
